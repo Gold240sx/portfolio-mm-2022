@@ -1,0 +1,267 @@
+.background-particles {
+  z-index: -7000 !important;
+  opacity: .5;
+}
+
+.modular-bg {
+  background-color: #f9f9f9;
+  height: 3000px; 
+  width: 100vw;
+  z-index: -5;
+  position: absolute;
+  top: 1233px;
+}
+
+.modular-bg::after {
+  content: '';
+  background-color: white;
+  height: 2450px;
+  width: 100vw;
+  z-index: -5;
+  position: absolute;
+  top: 500px;
+}
+
+img.icon, svg.icon {
+  height: 2.5rem;
+  padding-inline: 10px;
+  opacity: 15%;
+  box-shadow: #1f223591 0px 0px 25px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+img.icon:hover, svg.icon:hover {
+  opacity: 60%;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  min-height: fit-content;
+  margin: 0;
+}
+
+.profile-parent {
+  display: flex;
+  align-items: center;
+  color: aliceblue;
+}
+
+.profile-details{
+  width: 40vw;
+}
+
+.profile-details-name {
+  font-size: 24px;
+  font-family: "Poppins SemiBold";
+  margin-bottom: 120px;
+}
+.profile-details-role {
+  /* display: flex;
+  flex-direction: column; */
+  /* margin: 14px 0 24px 0; */
+  position: absolute;
+  /* margin-bottom: 190px !important; */
+  margin-top: -120px;
+  z-index: 5;
+}
+.profile-details-role h1 span{
+  font-size: 28px;
+  color: hsl(0, 0%, 100%) !important;
+  font-size: 1.5em;
+  white-space: nowrap;
+  font-weight: 500;
+  text-shadow: #00000091 0px 0px 25px;
+}
+.primary-text {
+  color: var(--white);
+  text-shadow: #00000091 0px 0px 25px;
+  font-weight: 600;
+  font-size: larger;
+  white-space: nowrap;
+  align-self: center;
+}
+.highlighted-text {
+  color: rgb(179, 179, 179);
+  font-weight: 600;
+  text-shadow: none;
+}
+.profile-role-tagline {
+  font-size: 22px;
+  margin-bottom: 40px;
+}
+
+.profile-options {
+  margin-top: 40px;
+  justify-self: center !important;
+}
+
+.profile-options .highlighted-btn {
+  margin: 0 0 0 28px;
+  border-radius: 12px solid white;
+}
+.profile-options .highlighted-btn:hover {
+  margin: 0 0 0 28px;
+  background-color: cornsilk;
+  color: #111;
+}
+.profile-picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 0px 0px var(--white);
+  border-radius: 50%;
+  height: 380px;
+  width: 380px;
+  margin: 0 0px 0 120px;
+}
+.profile-picture-background {
+  height: 92%;
+  width: 92%;
+  opacity: 85%;
+  border-radius: 50%;
+  background-image: url('../Assets/Images/me.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  filter: saturate(.3);
+}
+.profile-picture-background:hover {
+  opacity: 90%;
+  transform: scale(1.07);
+  transition: 1s ease-out;
+  filter: saturate(.55);
+  filter: brightness(105%);
+  cursor: none;
+}
+
+/* .colz {
+  margin-top: -15px;
+} */
+
+.colz .colz-icon i {
+  color: white;
+  padding: 8px;
+  padding-left: 0px;
+}
+.colz .cols-icon i:hover {
+  transform: scale(1.5);
+}
+
+svg.icon {
+  margin: 10px!important;
+}
+
+/*IPAD PRO RESPONSIVENESS*/
+@media only screen and (max-width: 1110px) {
+  .profile-picture {
+    margin: 0 0px 0 80px;
+  }
+  .profile-details-name {
+    font-size: 20px;
+  }
+  .profile-details-role .primary-text {
+    font: 12px;
+  }
+  .profile-options .btn {
+    width: 120px;
+    padding: 11px 0;
+    z-index: 700;
+  }
+  /* .profile-details-role h1 span{
+    white-space: unset;
+  } */
+}
+@media only screen and (max-width: 910px) {
+  .profile-picture {
+    margin: 0 0 0 4px;
+    height: 320px;
+    width: 320px;
+  }
+}
+@media only screen and (max-width: 810px) {
+  .profile-picture {
+    margin: 0 !important;
+  }
+  .profile-parent {
+    flex-direction: column-reverse;
+    margin: 40px 0 0 0;
+  }
+  .profile-options {
+    display: flex;
+    justify-content: space-between;
+  }
+  .proflie-details {
+    margin: 25px 0 0;
+  }
+  .profile-options .highlighted-btn {
+    /* margin: 0 !important; */
+  }
+  .profile-details-name,
+  .profile-details-role {
+    text-align: center;
+  }
+
+  .profile-details-role h1 {
+    font-size: 26px;
+    position: absolute;
+    margin-left: -15vw;
+    /* margin-top: 40%; */
+  }
+
+  .profile-details-name {
+    margin-bottom: 140px;
+    width: fit-content !important;
+  }
+
+  button {
+    height: 55px;
+    margin-inline: 10px;
+  }
+
+  .profile-details-role h1 {
+    font-size: 20px;
+    margin-top: 28px;
+  }
+}
+@media only screen and (min-width: 700px) {
+
+  .primary-btn {
+    margin-right: 40px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .profile-options{
+    flex-direction: column;
+  }
+
+  .profile-options button {
+    align-self: center;
+    margin-bottom: 20px;
+  }
+
+  .profile-options .highlighted-btn {
+    margin: 0 0 0 0px !important;
+  }
+}
+
+@media only screen and (max-width: 549px) {
+  .colz-icon {
+    margin-left: -70%;
+    width: 100vw;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .profile-picture {
+    height: 275px;
+    width: 275px;
+    margin-top: -90px;
+  }
+  .proflie-details {
+    width: 95%;
+  }
+}

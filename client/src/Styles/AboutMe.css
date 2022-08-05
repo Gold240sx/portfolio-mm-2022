@@ -1,0 +1,199 @@
+.about-me-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 17.8vh 0 0 0;
+  padding: 100px 0;
+}
+
+.about-me-container::before {
+  content: '';
+  background-image: url("../Assets/Home/shape-bg.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  height: 300px;
+  margin-top: -400px;
+  margin-bottom: 80px;
+  width: 100vw;
+  justify-content: center;
+  position: relative;
+  opacity: .5;
+  z-index: 5;
+  pointer-events: none;
+}
+
+.about-me-parent {
+  max-width: 1200px;
+  width: 90%;
+}
+.about-me-card {
+  display: flex;
+  width: 100%;
+  box-shadow: 0 0 40px -2px #00000022;
+  background-color: rgba(255, 255, 255, 0.767);
+  overflow: hidden;
+}
+.about-me-profile {
+  width: 50%;
+  background-image: url("../Assets/Images/AboutMe.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.about-me-details {
+  width: 68%;
+  text-align: justify;
+  padding: 30px 50px 30px 30px;
+}
+
+.about-me-title {
+  font-size: 22px;
+}
+
+.about-me-description {
+  font-size: 12px;
+}
+
+.about-me-summary {
+  margin-top: 15px;
+}
+
+.about-me-highlights {
+  margin: 80px 0;
+}
+
+.about-me-title {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.highlght-heading {
+  font-family: "Poppins Bold";
+  font-size: 14px;
+  margin: 0 0 5px 0;
+}
+
+.highlight {
+  display: flex;
+  align-items: center;
+  margin: 5px 0;
+  font-size: 12px;
+}
+
+.highlight-blob {
+  height: 12px;
+  width: 12px;
+  margin: 0 10px 0 0;
+  background-color: aquamarine;
+  border-radius: 50%;
+}
+ 
+.ol-description {
+  font-size: 14px;
+  font-weight: 500;
+  color: black !important;
+}
+
+.about-me-options .highlighted-btn {
+  margin: 0 0 0 30px;
+}
+
+.screen-container {
+  background-color: #f9f9f9 !important;
+}
+
+.ol {
+  background-color: darkcyan;
+  padding: 3px 3px 3px 9px;
+  border-radius: 50%;
+  color: #f9f9f9;
+  font-size: 16px;
+  margin-right: 10px;
+  font-weight: 500;
+}
+
+/* Change the width of the 1. because it's skinnier than the rest of the numbers */
+.about-me-summary:nth-child(2) .highlight:nth-child(1) .numbers .ol  {
+  padding: 3px 5px 3px 11px;
+}
+
+.highlight {
+  margin-bottom: 18px;
+}
+
+.course-link {
+  background-color: rgb(108, 108, 108);
+  color: white;
+  text-decoration: none;
+  width: 55px;
+  height: 25px;
+  border-radius: 6px;
+  text-align: center;
+  font-size: 16px;
+  margin-left: 15px;
+}
+
+.course-link:hover {
+  background-color: aquamarine;
+  color: black;
+}
+
+.numbers {
+  margin-left: 20px;
+}
+
+.about-me-options {
+  margin-top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.top-scroll-btn:hover {
+  background-color: rgb(106, 217, 180);
+  transition: ease-in .1s;
+}
+
+.about-me-education {
+  background-color: rgb(246, 246, 246);
+  margin-left: -22px;
+  padding-left: 30px;
+  width: 108%;
+  padding-right: 20px;
+  padding-block: 40px;
+}
+
+.big-hire {
+  font-size: 22px;
+  font-weight: 400;
+}
+
+/*IPAD PRO RESPONSIVENESS*/
+@media only screen and (max-width: 1110px) {
+  .about-me-parent {
+    width: 88%;
+  }
+}
+@media only screen and (max-width: 898px) {
+  .about-me-profile {
+    display: none;
+  }
+  .about-me-details {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 466px) {
+  .about-me-options {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-me-options .highlighted-btn {
+    margin: 24px 0 0 0 !important;
+  }
+  .about-me-options button {
+    width: 100%;
+  }
+}

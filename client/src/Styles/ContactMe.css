@@ -1,0 +1,214 @@
+.screen-container-blank {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.central-form {
+    width: min(90vw, 1400px);
+    /* display: flex; */
+    margin-inline: auto;
+    border-radius: 20px;
+}
+
+.header-banner {
+     border-radius: 20px;
+     width: 100%;
+     min-height: fit-content;
+     height: max(800px, 40vh);
+     display: flex;
+     margin-inline: auto;
+     overflow: hidden;
+}
+
+h4 {
+    color: white;
+    font-size: 27px;
+    font-weight: 500;
+    margin-block: 10px;
+}
+
+.header-banner-image {
+    height: 300px;
+    width: min(90vw, 1400px);
+    border-radius: 20px 20px 0 0;
+    /* opacity: 20%; */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.368);
+}
+
+.contact-details-role {
+    margin-top: -740px;
+    margin-left: 80px;
+}
+
+.typical-title {
+    font-size: 3.5rem;
+}
+
+.typical-title span {
+    color: white;
+    font-weight: 300;
+    /* -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    /* -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-offset: outside;
+    -webkit-text-stroke-color: black;
+    stroke: 10px solid black; */
+    /* background-color: rgba(0, 0, 0, 0.677); */
+    padding: 20px;
+}
+
+.contact-icons {
+    margin-top: -30px;
+    padding-left: 95px;
+}
+
+svg.contact-icon {
+    background-color: rgba(0, 0, 0, 0.405);
+    opacity: 70%;
+    fill: rgb(255, 255, 255)
+}
+
+svg.contact-icon:hover {
+    fill: #FFEED1;
+    background-color: rgba(0, 0, 0, 0.01);
+    transition: all ease-in .3s;
+}
+
+.contact-form {
+    padding: 20px;
+    position: relative;
+    background-color: #8f5216b4;
+    border-radius: 0 0 20px 20px;
+    z-index: 10000000000;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+input {
+    padding: 10px 20px;
+}
+
+textarea {
+    padding: 20px;
+}
+
+input,
+textarea {
+    background: linear-gradient(90deg, rgba(0,18,24,1) 0%, rgba(21,41,46,1) 100%);
+    mix-blend-mode: none;
+    border-radius: 10px;
+    border: none;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    font-family: 'Poppins';
+    border: 3px solid transparent;
+    margin-top: 3px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.181);
+}
+
+input:focus,
+textarea:focus {
+    border: 3px rgb(141, 183, 197) solid;
+    transition: all ease-in-out .8s;
+
+}
+
+
+label {
+    color: white;
+    font-weight: 700;
+    letter-spacing: .05rem;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+textarea {
+    /* resize: vertical; */
+    resize: none;
+    height: 270px;
+}
+
+.send-btn {
+    padding: 7px 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: #00000045;
+    color: white;
+    font-weight: 500;
+    position: absolute;
+    right: 20px;
+    margin-top: -40px;
+    cursor: pointer;
+}
+
+.fa-paper-plane {
+    font-size: 22px;
+}
+
+.send-btn:hover {
+    background-color: #ffffff20;
+    transition: all ease-in .2s;
+}
+
+button.contact-submit {
+    background-color: unset;
+    border: none;
+    color: white;
+    font-size: 22px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+.multiply {
+    mix-blend-mode: multiply;
+    border-radius: 10px;
+    padding-left: 15px;
+    margin-bottom: -2px;
+    margin-right: -2px;
+}
+
+.banner-message {
+    content: attr(data-text);
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-text-fill-color: #e7b37e;
+    text-shadow: -5px 5px 10px #000,
+                 -10px 10px 30px #000,
+                 -20px 15px 40px #000,
+                 -25px 20px 50px #000,
+                 -30px 25px 60px #000,
+                 -35px 30px 670px #000;
+}
+
+.hidden {
+    display: none;
+}
+
+/* .banner-message:before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    -webkit-text-fill-color: #846240;
+    text-shadow: -5px 5px 10px #000,
+                 -10px 10px 30px #000,
+                 -20px 15px 40px #000,
+                 -25px 20px 50px #000,
+                 -30px 25px 60px #000,
+                 -35px 30px 670px #000;
+    
+} */
+
+@media only screen and (max-width: 810px) {
+    button.contact-submit {
+        height:unset;
+    }
+}
